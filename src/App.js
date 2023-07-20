@@ -1,6 +1,7 @@
 import Arrays from "./Arrays";
 import Objects from "./Objects";
 import { useState } from "react";
+import Form from "./Form";
 
 function App() {
 
@@ -26,6 +27,8 @@ function App() {
       <button onClick={()=> setCounter(0)}>reset</button>
       <button onClick={()=> setCounter(prevCount => prevCount + 5)}>Add 5</button>
       <button onClick={()=> setCounter(prevCount => prevCount - 5)}>Minus 5</button>
+      <h2>Form</h2>
+      <Form />
     </div>
   );
 }
