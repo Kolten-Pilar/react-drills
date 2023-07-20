@@ -23,7 +23,9 @@ function App() {
       <button onClick={handleIncrement}>+</button>
       <button onClick={handleDecrement}>-</button>
       <br />
-      <button onClick={()=> {setCounter(0)}}>reset</button>
+      <button onClick={()=> setCounter(0)}>reset</button>
+      <button onClick={()=> setCounter(prevCount => prevCount + 5)}>Add 5</button>
+      <button onClick={()=> setCounter(prevCount => prevCount - 5)}>Minus 5</button>
     </div>
   );
 }
